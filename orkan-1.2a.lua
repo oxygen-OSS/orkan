@@ -274,11 +274,14 @@ $$$$$$$$$$$"$$$c$$$cc$$$c"$$c.    "$$ $$""""        $$""""   $$,    $$$$$     $$
 888888 Y88" 888o888   888,`Y8bo,,,o88o888oo,__      888oo,__ 888_,o8P'888     88,   "888,_ _,88P888b "88bo,88b    dP
 MMMMMM  M'  "MMMYMM   ""`   `'YMUP"YMM""""YUMMM     """"YUMMMMMMMP"`  MMM     MMM     "YMMMMMP" MMMM   "W"  "YMmMY" 
 
-[1] GIMP - Photo Editing
-[2] Krita - Digital Painting
-[3] Digikam - Photo Management
-[4] Inkscape - Vector Graphics Editor
-[0] Go Back
+ _______________________________________
+|                                       | 
+| [1] GIMP - Photo Editing              |
+| [2] Krita - Digital Painting          |
+| [3] Digikam - Photo Management        |
+| [4] Inkscape - Vector Graphics Editor |
+| [0] Go Back                           |
+|_______________________________________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -320,11 +323,14 @@ function Arch_productivity_videoediting()
    Y88P      888  888_,o8P' 888oo,__"888,_ _,88P     888oo,__ 888_,o8P'888     88,   "888,_ _,88P888b "88bo,88b    dP
     MP       MMM  MMMMP"`   """"YUMMM "YMMMMMP"      """"YUMMMMMMMP"`  MMM     MMM     "YMMMMMP" MMMM   "W"  "YMmMY" 
 
-[1] Kdenlive - Video Editing by KDE
-[2] Shotcut - Simple Video Editor
-[3] OpenShot - Video Editing
-[4] Flowblade - Fast Python multi-track Video Editor
-[0] Go Back
+ _________________________________________
+|                                         |
+| [1] Kdenlive - Video Editing by KDE     |
+| [2] Shotcut - Simple Video Editor       |
+| [3] OpenShot - Video Editing            |
+| [4] Flowblade - Fast Python multi-track |
+| [0] Go Back                             |
+|_________________________________________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -366,9 +372,12 @@ function Arch_productivity_3dmodeling()
   ,,o888"888_,o8P'    888 Y88" 888o"888,_ _,88P 888_,o8P' 888oo,__ o88oo,.__888  888    Y88 `Y8bo,,,o88o
   YMMP"  MMMMP"`      MMM  M'  "MMM  "YMMMMMP"  MMMMP"`   """"YUMMM""""YUMMMMMM  MMM     YM   `'YMUP"YMM
 
-[1] Blender - 3D Creation Suite
-[2] Vinegar - Roblox Studio Launcher via WINE
-[0] Go Back
+ _______________________________________________
+|                                               |
+| [1] Blender - 3D Creation Suite               |
+| [2] Vinegar - Roblox Studio Launcher via WINE |
+| [0] Go Back                                   |
+|_______________________________________________|
 ]])
 
         print("Choose an option (0-2): ")
@@ -402,13 +411,16 @@ function Arch_productivity_textediting()
      88,     888oo,__    oP"``"Yo,       88,         888oo,__ 888_,o8P'888     88,   "888,_ _,88P888b "88bo,
      MMM     """"YUMMM,m"       "Mm,     MMM         """"YUMMMMMMMP"`  MMM     MMM     "YMMMMMP" MMMM   "W" 
 
-[1] Vim
-[2] NeoVim
-[3] Emacs
-[4] VS Code
-[5] VS Codium
-[6] Code - OSS
-[0] Go Back
+ ________________
+|                |
+| [1] Vim        |
+| [2] NeoVim     |
+| [3] Emacs      |
+| [4] VS Code    |
+| [5] VS Codium  |
+| [6] Code - OSS |
+| [0] Go Back    |
+|________________|
 ]])
         print("Choose an option (0-6): ")
         local arch_productivity_txtedit_choice = tonumber(io.read())
@@ -457,62 +469,65 @@ function Arch_tools()
      88,   "888,_ _,88P"888,_ _,88Po88oo,.__88b    dP
      MMM     "YMMMMMP"   "YMMMMMP" """"YUMMM "YMmMY" 
 
-[1] Media Players
-[2] Browsers
-[3] System Monitor
-[4] Pen Testing
-[5] Programming Language
-[6] Terminal Emulators
-[7] YAY - Yet Another Yaourt AUR Helper
-[8] PARU - The AUR Helper Written in RUST
-[9] Flatpak - Software Made Easy
-[0] Go Back
+ ___________________________________________
+|                                           |
+| [1] Media Players                         |
+| [2] Browsers                              |
+| [3] System Monitor                        |
+| [4] Pen Testing                           |
+| [5] Programming Language                  |
+| [6] Terminal Emulators                    |
+| [7] YAY - Yet Another Yaourt AUR Helper   |
+| [8] PARU - The AUR Helper Written in RUST |
+| [9] Flatpak - Software Made Easy          |
+| [0] Go Back                               |
+|___________________________________________|
 ]])
 
         print("Choose an option (0-8): ")
         local arch_tools_choice = tonumber(io.read())
 
         if arch_tools_choice == 1 then
-		return Arch_tools_mediaplayers()
-	end
-	if arch_tools_choice == 2 then
-		return Arch_tools_browsers()
-	end
-	if arch_tools_choice == 3 then
-		return Arch_tools_sysmoni()
-	end
-	if arch_tools_choice == 4 then
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_choice == 5 then
-		return Arch_tools_languages()
-	end
-	if arch_tools_choice == 6 then
-		return Arch_tools_terminal()
-	end
-	if arch_tools_choice == 7 then
-		os.execute("clear && sudo pacman -S git base-devel")
-		os.execute("clear && git clone https://aur.archlinux.org/yay.git")
-		os.execute("clear && cd yay && makepkg -si")
-		return Arch_tools()
-	end
-	if arch_tools_choice == 8 then
-		os.execute("sudo pacman -S git base-devel")
-		os.execute("clear && git clone https://aur.archlinux.org/paru.git")
-		os.execute("clear && cd paru && makepkg -si")
-		return Arch_tools()
-	end
-	if arch_tools_choice == 9 then
-		os.execute("clear && sudo pacman -S flatpak && flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo")
-		return Arch_tools()
-	end
-	if arch_tools_choice == 0 then
-		return Arch_category()
-	else
-		print("Invalid choice! Please try again.")
-		os.execute("sleep 2")
-		return Arch_tools()
-	end
+                return Arch_tools_mediaplayers()
+        end
+        if arch_tools_choice == 2 then
+                return Arch_tools_browsers()
+        end
+        if arch_tools_choice == 3 then
+                return Arch_tools_sysmoni()
+        end
+        if arch_tools_choice == 4 then
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_choice == 5 then
+                return Arch_tools_languages()
+        end
+        if arch_tools_choice == 6 then
+                return Arch_tools_terminal()
+        end
+        if arch_tools_choice == 7 then
+                os.execute("clear && sudo pacman -S git base-devel")
+                os.execute("clear && git clone https://aur.archlinux.org/yay.git")
+                os.execute("clear && cd yay && makepkg -si")
+                return Arch_tools()
+        end
+        if arch_tools_choice == 8 then
+                os.execute("sudo pacman -S git base-devel")
+                os.execute("clear && git clone https://aur.archlinux.org/paru.git")
+                os.execute("clear && cd paru && makepkg -si")
+                return Arch_tools()
+        end
+        if arch_tools_choice == 9 then
+                os.execute("clear && sudo pacman -S flatpak && flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo")
+                return Arch_tools()
+        end
+        if arch_tools_choice == 0 then
+                return Arch_category()
+        else
+                print("Invalid choice! Please try again.")
+                os.execute("sleep 2")
+                return Arch_tools()
+        end
 end
 
 function Arch_tools_mediaplayers()
@@ -526,12 +541,15 @@ $$$$$$$$"$$$ $$""""   $$,    $$$$$c$$$cc$$$c        $$$""    $$'    c$$$cc$$$c  
 888 Y88" 888o888oo,__ 888_,o8P'888 888   888,       888o    o88oo,.__888   888,,8P"`      888oo,__ 888b "88bo,
 MMM  M'  "MMM""""YUMMMMMMMP"`  MMM YMM   ""`        YMMMb   """"YUMMMYMM   ""`mM"         """"YUMMMMMMM   "W" 
 
-[1] VLC - Media Player
-[2] MPV - Media Player
-[3] SMPlayer - Media Player
-[4] Clementine - Music Player
-[5] Gwenview - Image Viewer
-[0] Go Back
+ _________________________________
+|                                 |
+| [1] VLC - Media Player          |
+| [2] MPV - Media Player          |
+| [3] SMPlayer - Media Player     |
+| [4] Clementine - Music Player   |
+| [5] Gwenview - Image Viewer     |
+| [0] Go Back                     |
+|_________________________________|
 ]])
 
         print("Choose an option (0-5): ")
@@ -577,19 +595,22 @@ function Arch_tools_browsers()
 _88o,,od8P888b "88bo,"888,_ _,88P   "88"888    88b    dP888oo,__ 888b "88bo,88b    dP
 ""YUMMMP" MMMM   "W"   "YMMMMMP"     "M "M"     "YMmMY" """"YUMMMMMMM   "W"  "YMmMY" 
 
-[1] Firefox - THE Privacy Focused Browser
-[2] LibreWolf - A Fork of Firefox focused on enhancing privacy even further than Firefox
-[3] Chromium - Open Source Browser made by Google
-[4] Mullvad Browser - A Privacy-Focused Browser built on Firefox
-[5] Zen Browser - The Browser focused on Privacy and Usability
-[6] Thorium - The Fastest Browser built on Chromium
-[7] Brave - A Chromium-built Privacy-Respecting Browser
-[8] Vivaldi - A Highly Customizable Chromium-based Browser
-[9] Tor Browser - The Privacy-Focused Browser that uses the Tor Network
-[0] Go Back
+ _____________________________________________________________________________
+|                                                                             |
+| [1] Firefox - THE Privacy Focused Browser                                   |
+| [2] LibreWolf - A Fork of Firefox focused on enhancing privacy even further |
+| [3] Chromium - Open Source Browser made by Google                           |
+| [4] Mullvad Browser - A Privacy-Focused Browser built on Firefox            |
+| [5] Zen Browser - The Browser focused on Privacy and Usability              |
+| [6] Thorium - The Fastest Browser built on Chromium                         |
+| [7] Brave - A Chromium-built Privacy-Respecting Browser                     |
+| [8] Vivaldi - A Highly Customizable Chromium-based Browser                  |
+| [9] Tor Browser - The Privacy-Focused Browser that uses the Tor Network     |
+| [0] Go Back                                                                 |
+|_____________________________________________________________________________|
 ]])
 
-        print("Choose an Option (0-12): ")
+        print("Choose an Option (0-9): ")
         local Arch_tools_browsers_choice = tonumber(io.read())
 
         if Arch_tools_browsers_choice == 1 then
@@ -648,18 +669,21 @@ function Arch_tools_sysmoni()
  88b    dP  ,8P"`      88b    dP    888 Y88" 888o"888,_ _,88P888    Y88888     88,   "888,_ _,88P888b "88bo,
   "YMmMY"  mM"          "YMmMY"     MMM  M'  "MMM  "YMMMMMP" MMM     YMMMM     MMM     "YMMMMMP" MMMM   "W" 
 
-[1] Htop
-[2] Btop
-[3] Bpytop
-[4] bashtop
-[5] glances
-[6] conky
-[7] fastfetch - Fetching system information in an eyecandy way
-[8] GNOME System Monitor
-[0] Go Back
+ _________________________________________
+|                                         |
+| [1] Htop                                |
+| [2] Btop                                |
+| [3] Bpytop                              |
+| [4] bashtop                             |
+| [5] glances                             |
+| [6] conky                               |
+| [7] fastfetch - Fetching system info    |
+| [8] GNOME System Monitor                |
+| [0] Go Back                             |
+|_________________________________________|
 ]])
 
-        print("Choose an option (0-9): ")
+        print("Choose an option (0-8): ")
         local arch_tools_sysmoni_choice = tonumber(io.read())
 
         if arch_tools_sysmoni_choice == 1 then
@@ -714,59 +738,62 @@ function Arch_tools_pentesting()
    888o      888oo,__ 888    Y88         88,     888oo,__88b    dP    88,    888  888    Y88 `Y8bo,,,o88o
    YMMMb     """"YUMMMMMM     YM         MMM     """"YUMMM"YMmMY"     MMM    MMM  MMM     YM   `'YMUP"YMM
 
-[1] Nmap
-[2] Metasploit
-[3] Wireshark-CLI (Command-Line-Interface)
-[4] Aircrack-ng
-[5] John the Ripper
-[6] netcat
-[7] Hashcat
-[8] Add BlackArch repository (Not Recommended!)
-[0] Go Back
+ _________________________________________________
+|                                                 |
+| [1] Nmap                                        |
+| [2] Metasploit                                  |
+| [3] Wireshark-CLI                               |
+| [4] Aircrack-ng                                 |
+| [5] John the Ripper                             |
+| [6] netcat                                      |
+| [7] Hashcat                                     |
+| [8] Add BlackArch repository (Not Recommended!) |
+| [0] Go Back                                     |
+|_________________________________________________|
 ]])
 
-	print("Choose an option (0-8): ")
+        print("Choose an option (0-8): ")
         local arch_tools_pentesting_choice = tonumber(io.read())
 
-	if arch_tools_pentesting_choice == 1 then
-		os.execute("sudo pacman -S nmap")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 2 then
-		os.execute("yay -S metasploit")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 3 then
-		os.execute("sudo pacman -S wireshark-cli")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 4 then
-		os.execute("sudo pacman -S aircrack-ng")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 5 then
-		os.execute("sudo pacman -S john")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 6 then
-		os.execute("sudo pacman -S openbsd-netcat")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 7 then
-		os.execute("sudo pacman -S hashcat")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 8 then
-		os.execute("sudo pacman -S curl && curl -O https://blackarch.org/strap.sh && sudo ./strap.sh && sudo pacman -Syyu")
-		return Arch_tools_pentesting()
-	end
-	if arch_tools_pentesting_choice == 0 then
-		return Arch_tools()
-	else
-		print("Invalid choice! Please try again.")
-		os.execute("sleep 2")
-		return Arch_tools_pentesting()
-	end
+        if arch_tools_pentesting_choice == 1 then
+                os.execute("sudo pacman -S nmap")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 2 then
+                os.execute("yay -S metasploit")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 3 then
+                os.execute("sudo pacman -S wireshark-cli")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 4 then
+                os.execute("sudo pacman -S aircrack-ng")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 5 then
+                os.execute("sudo pacman -S john")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 6 then
+                os.execute("sudo pacman -S openbsd-netcat")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 7 then
+                os.execute("sudo pacman -S hashcat")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 8 then
+                os.execute("sudo pacman -S curl && curl -O https://blackarch.org/strap.sh && sudo ./strap.sh && sudo pacman -Syyu")
+                return Arch_tools_pentesting()
+        end
+        if arch_tools_pentesting_choice == 0 then
+                return Arch_tools()
+        else
+                print("Invalid choice! Please try again.")
+                os.execute("sleep 2")
+                return Arch_tools_pentesting()
+        end
 end
 
 function Arch_tools_languages()
@@ -780,69 +807,73 @@ function Arch_tools_languages()
 o88oo,.__888   888,888    Y88 `Y8bo,,,o88o88    .d888 888   888,`Y8bo,,,o88o888oo,__88b    dP
 """"YUMMMYMM   ""` MMM     YM   `'YMUP"YMM "YmmMMMM"" YMM   ""`   `'YMUP"YMM""""YUMMM"YMmMY" 
 
-[1] Z Shell - Modern and Powerful Shell
-[2] PowerShell - Modern Shell developed by Microsoft
-[3] Fish Shell - Fast, Customizable Shell
-[4] Python - FOSS Programming Language developed by PSF
-[5] python-pip - Python Package Manager
-[6] Java (OpenJDK) - FOSS Programming Language developed by Oracle
-[7] GO - FOSS Programming Language supported by Google
-[8] RUST - Modern, Fast, Memory-safe Programming Language
-[9] Node.js - Popular & FOSS JavaScript runtime environment
-[0] Go Back
+ ________________________________________________
+|                                                |
+| [1] Z Shell - Modern and Powerful Shell        |
+| [2] PowerShell - Modern Shell by Microsoft     |
+| [3] Fish Shell - Fast, Customizable Shell      |
+| [4] Python - FOSS Programming Language         |
+| [5] python-pip - Python Package Manager        |
+| [6] Java (OpenJDK) - FOSS Programming Language |
+| [7] GO - FOSS Programming Language by Google   |
+| [8] RUST - Modern, Fast, Memory-safe PL        |
+| [9] Node.js - FOSS JavaScript runtime          |
+| [0] Go Back                                    |
+|________________________________________________|
 ]])
-	print("Choose an option (0-9): ")
+
+        print("Choose an option (0-9): ")
         local arch_tools_languages_choice = tonumber(io.read())
 
         if arch_tools_languages_choice == 1 then
-		os.execute("sudo pacman -S zsh")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 2 then
-		os.execute("yay -S powershell-bin")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 3 then
-		os.execute("sudo pacman -S fish")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 4 then
-		os.execute("sudo pacman -S python")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 5 then
-		os.execute("sudo pacman -S python-pip")
-		return Arch_tools_languages()
-	end
+                os.execute("sudo pacman -S zsh")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 2 then
+                os.execute("yay -S powershell-bin")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 3 then
+                os.execute("sudo pacman -S fish")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 4 then
+                os.execute("sudo pacman -S python")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 5 then
+                os.execute("sudo pacman -S python-pip")
+                return Arch_tools_languages()
+        end
         if arch_tools_languages_choice == 6 then
-		os.execute("sudo pacman -S jdk-openjdk")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 7 then
-		os.execute("sudo pacman -S go")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 8 then
-		os.execute("sudo pacman -S rust")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 9 then
-		os.execute("sudo pacman -S nodejs npm")
-		return Arch_tools_languages()
-	end
-	if arch_tools_languages_choice == 0 then
-		return Arch_tools()
-	else
-		print("Invalid choice! Please try again.")
-		os.execute("sleep 2")
-		return Arch_tools_languages()
-	end
+                os.execute("sudo pacman -S jdk-openjdk")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 7 then
+                os.execute("sudo pacman -S go")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 8 then
+                os.execute("sudo pacman -S rust")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 9 then
+                os.execute("sudo pacman -S nodejs npm")
+                return Arch_tools_languages()
+        end
+        if arch_tools_languages_choice == 0 then
+                return Arch_tools()
+        else
+                print("Invalid choice! Please try again.")
+                os.execute("sleep 2")
+                return Arch_tools_languages()
+        end
 end
 
 function Arch_tools_terminal()
-	os.execute("clear")
+        os.execute("clear")
 
-	print([[
+        print([[
 ::::::::::::.,:::::: :::::::..   .        :   ::::::.    :::.  :::.      :::     
 ;;;;;;;;'''';;;;'''' ;;;;``;;;;  ;;,.    ;;;  ;;;`;;;;,  `;;;  ;;`;;     ;;;     
      [[      [[cccc   [[[,/[[['  [[[[, ,[[[[, [[[  [[[[[. '[[ ,[[ '[[,   [[[     
@@ -850,15 +881,18 @@ function Arch_tools_terminal()
      88,     888oo,__ 888b "88bo,888 Y88" 888o888  888    Y88 888   888,o88oo,.__
      MMM     """"YUMMMMMMM   "W" MMM  M'  "MMMMMM  MMM     YM YMM   ""` """"YUMMM
 
-[1] Kitty
-[2] Alacritty
-[3] Konsole
-[4] Xfce4-Terminal
-[0] Go back
+ ____________________
+|                    |
+| [1] Kitty          |
+| [2] Alacritty      |
+| [3] Konsole        |
+| [4] Xfce4-Terminal |
+| [0] Go Back        |
+|____________________|
 ]])
 
-	print("Choose an option (0-4): ")
-	local arch_terminals_choice = tonumber(io.read())
+        print("Choose an option (0-4): ")
+        local arch_terminals_choice = tonumber(io.read())
 
         if arch_terminals_choice == 1 then
                 os.execute("sudo pacman -S kitty")
@@ -896,30 +930,34 @@ function Arch_tweaks()
      88,        "88"888     888oo,__ 888   888,"888"88o,  88b    dP
      MMM         "M "M"     """"YUMMMYMM   ""`  MMM "MMP"  "YMmMY" 
 
-[1] Firewalls
-[2] Drivers
-[3] Kernel Manager
-[0] Go Back
+ ____________________
+|                    |
+| [1] Firewalls      |
+| [2] Drivers        |
+| [3] Kernel Manager |
+| [0] Go Back        |
+|____________________|
 ]])
-	print("Choose an option (0-3): ")
+
+        print("Choose an option (0-3): ")
         local arch_tweaks_choice = tonumber(io.read())
 
         if arch_tweaks_choice == 1 then
-                Arch_tweaks_firewalls()
-	end
+                return Arch_tweaks_firewalls()
+        end
         if arch_tweaks_choice == 2 then
-                Arch_tweaks_drivers()
-	end
+                return Arch_tweaks_drivers()
+        end
         if arch_tweaks_choice == 3 then
-                Arch_tweaks_kernelmanager()
-	end
+                return Arch_tweaks_kernelmanager()
+        end
         if arch_tweaks_choice == 0 then
-		return Arch_category()
+                return Arch_category()
         else
                 print("Invalid choice! Please try again.")
                 os.execute("sleep 2")
                 return Arch_tweaks()
-	end
+        end
 end
 
 function Arch_tweaks_firewalls()
@@ -933,49 +971,52 @@ function Arch_tweaks_firewalls()
  888    888 888b "88bo,888oo,__   "88"888   888   888,o88oo,.__o88oo,.__88b    dP
  "MM,   MMM MMMM   "W" """"YUMMM   "M "M"   YMM   ""` """"YUMMM""""YUMMM "YMmMY" 
 
-[1] UFW
-[2] NFTables
-[3] firewalld
-[4] REMOVE SUPPORTED FIREWALLS
-[0] Go Back
+WARNING! Before Installing, you should definitely remove other firewalls to avoid conflicts
 
-WARNING! Before Installing, you should definitely disable and remove the other firewalls with 4. as multiple firewalls won't work with each other
+ ________________________________
+|                                |
+| [1] UFW                        |
+| [2] NFTables                   |
+| [3] firewalld                  |
+| [4] REMOVE SUPPORTED FIREWALLS |
+| [0] Go Back                    |
+|________________________________|
 ]])
 
-	print("Choose an option (0-4): ")
+        print("Choose an option (0-4): ")
         local arch_tweaks_fw_choice = tonumber(io.read())
 
         if arch_tweaks_fw_choice == 1 then
-		os.execute("sudo pacman -S ufw")
+                os.execute("sudo pacman -S ufw")
                 os.execute("sudo systemctl enable --now ufw")
                 print("UFW setup has finished.")
                 os.execute("sleep 2")
                 return Arch_tweaks_firewalls()
-	end
-	if arch_tweaks_fw_choice == 2 then
+        end
+        if arch_tweaks_fw_choice == 2 then
                 os.execute("sudo pacman -S nftables")
                 os.execute("sudo systemctl enable --now nftables")
                 print("nftables setup has finished.")
                 os.execute("sleep 2")
                 return Arch_tweaks_firewalls()
-	end
-	if arch_tweaks_fw_choice == 3 then
+        end
+        if arch_tweaks_fw_choice == 3 then
                 os.execute("sudo pacman -S firewalld")
                 os.execute("sudo systemctl enable --now firewalld")
                 print("firewalld setup has finished.")
                 os.execute("sleep 2")
                 return Arch_tweaks_firewalls()
-	end
+        end
         if arch_tweaks_fw_choice == 4 then
                 return Arch_removefirewalls()
-	end
+        end
         if arch_tweaks_fw_choice == 0 then
                 return Arch_tweaks()
-	else
+        else
                 print("Invalid choice! Please try again.")
                 os.execute("sleep 2")
                 return Arch_tweaks_firewalls()
-	end
+        end
 end
 
 function Arch_removefirewalls()
@@ -989,33 +1030,37 @@ function Arch_removefirewalls()
  888    888 888b "88bo,888oo,__   "88"888   888   888,o88oo,.__o88oo,.__88b    dP
  "MM,   MMM MMMM   "W" """"YUMMM   "M "M"   YMM   ""` """"YUMMM""""YUMMM "YMmMY" 
 
-[1] UFW
-[2] NFTables
-[3] FirewallD
-[0] Go Back
+ _______________
+|               |
+| [1] UFW       |
+| [2] NFTables  |
+| [3] FirewallD |
+| [0] Go Back   |
+|_______________|
 ]])
-	print("Choose an option (0-3): ")
+
+        print("Choose an option (0-3): ")
         local removefirewalls_choice = tonumber(io.read())
 
-	if removefirewalls_choice == 1 then
-		os.execute("sudo systemctl disable ufw && sudo pacman -Rns --noconfirm ufw")
-		return Arch_removefirewalls()
-	end
-	if removefirewalls_choice == 2 then
-		os.execute("sudo systemctl disable nftables && sudo pacman -Rns --noconfirm nftables")
-		return Arch_removefirewalls()
-	end
-	if removefirewalls_choice == 3 then
-		os.execute("sudo systemctl disable firewalld && sudo pacman -Rns --noconfirm firewalld")
-		return Arch_removefirewalls()
-	end
-	if removefirewalls_choice == 0 then
-		return Arch_tweaks_firewalls()
-	else
-		print("Invalid choice! Please try again.")
-		os.execute("sleep 2")
-		return Arch_removefirewalls()
-	end
+        if removefirewalls_choice == 1 then
+                os.execute("sudo systemctl disable ufw && sudo pacman -Rns --noconfirm ufw")
+                return Arch_removefirewalls()
+        end
+        if removefirewalls_choice == 2 then
+                os.execute("sudo systemctl disable nftables && sudo pacman -Rns --noconfirm nftables")
+                return Arch_removefirewalls()
+        end
+        if removefirewalls_choice == 3 then
+                os.execute("sudo systemctl disable firewalld && sudo pacman -Rns --noconfirm firewalld")
+                return Arch_removefirewalls()
+        end
+        if removefirewalls_choice == 0 then
+                return Arch_tweaks_firewalls()
+        else
+                print("Invalid choice! Please try again.")
+                os.execute("sleep 2")
+                return Arch_removefirewalls()
+        end
 end
 
 function Arch_tweaks_drivers()
@@ -1031,61 +1076,64 @@ function Arch_tweaks_drivers()
 
 WARNING! MAKE SURE THE DRIVER SUITS YOUR HARDWARE CONFIGURATION(GPU) AND KERNEL VERSION! YOU ALSO NEED TO REBUILD INITRAMFS AFTER SWITCHING DRIVER VERSIONS OR REMOVING DRIVERS! IF YOU'RE UNSURE ABOUT WHAT TO INSTALL, PLEASE RESEARCH IT FIRST!
 
-[1] Rebuild Initramfs - REQUIRED AFTER SWITCHING DRIVER VERSIONS!!
-[2] Delete (NVIDIA) Drivers
-[3] Install CUDA
-[4] Install OpenCL (NVIDIA)
-
-WARNING: These NVIDIA Drivers work only on GTX 16xx or Above. They won't work on cards older than them!
-[5] nvidia-open - standard driver
-[6] nvidia-open-lts - longterm support
-[7] nvidia-open-dkms - driver for the gaming focused linux-zen kernel or the secure linux-hardened kernel
-[0] Go Back
+ ____________________________________________________________
+|                                                            |
+| [1] Rebuild Initramfs - REQUIRED AFTER SWITCHING DRIVERS!! |
+| [2] Delete (NVIDIA) Drivers                                |
+| [3] Install CUDA                                           |
+| [4] Install OpenCL (NVIDIA)                                |
+|                                                            |
+| WARNING: These Drivers work only for GTX 16xx and newer!   |
+| [5] nvidia-open - standard driver                          |
+| [6] nvidia-open-lts - longterm driver                      |
+| [7] nvidia-open-dkms - dkms driver                         |
+| [0] Go Back                                                |
+|____________________________________________________________|
 ]])
 
-	print("Choose an option (0-7): ")
+        print("Choose an option (0-7): ")
         local arch_tweaks_driver_choice = tonumber(io.read())
 
         if arch_tweaks_driver_choice == 1 then
                 os.execute("sudo mkinitcpio -P")
                 return Arch_tweaks_drivers()
-	end
+        end
         if arch_tweaks_driver_choice == 2 then
                 return Arch_removedrivers()
-	end
-	if arch_tweaks_driver_choice == 3 then
+        end
+        if arch_tweaks_driver_choice == 3 then
                 os.execute("sudo pacman -S cuda nvidia-utils nvidia-settings")
                 return Arch_tweaks_drivers()
-	end
+        end
         if arch_tweaks_driver_choice == 4 then
                 os.execute("sudo pacman -S opencl-nvidia opencl-headers")
-        	return Arch_tweaks_drivers()
-	end
+                return Arch_tweaks_drivers()
+        end
         if arch_tweaks_driver_choice == 5 then
                 os.execute("sudo pacman -S nvidia-open")
                 print("nvidia setup has finished. Please make sure the driver matches your hardware configuration and kernel version. You Should Also Rebuild the initramfs!")
                 os.execute("sleep 10")
                 return Arch_tweaks_drivers()
-	end
+        end
         if arch_tweaks_driver_choice == 6 then
                 os.execute("sudo pacman -S nvidia-open-lts")
                 print("nvidia-lts setup has finished. Please make sure the driver matches your hardware configuration and kernel version. You Should Also Rebuild the initramfs!")
                 os.execute("sleep 10")
                 return Arch_tweaks_drivers()
-	end
+        end
         if arch_tweaks_driver_choice == 7 then
                 os.execute("sudo pacman -S nvidia-open-dkms")
                 print("nvidia-dkms setup has finished. Please make sure the driver matches your hardware configuration and kernel version. You Should Also Rebuild the initramfs!")
                 os.execute("sleep 10")
                 return Arch_tweaks_drivers()
-	end
+        end
         if arch_tweaks_driver_choice == 0 then
                 return Arch_tweaks()
-	else
+        else
                 print("Invalid choice! Please try again.")
                 os.execute("sleep 2")
                 return Arch_tweaks_drivers()
-	end
+        end
 end
 
 function Arch_removedrivers()
@@ -1101,10 +1149,14 @@ function Arch_removedrivers()
 
 WARNING: If you're planning to run the system without gpu drivers, make sure to rebuld initramfs after deleting the gpu driver. Also rebuild initramfs after you install a different driver.
 WARNING: These NVIDIA Drivers work only on GTX 16xx or Above. They won't work on cards older than them!
-[1] nvidia-open - standard driver
-[2] nvidia-open-lts - longterm support
-[3] nvidia-open-dkms - driver for the gaming focused linux-zen kernel or the secure linux-hardened kernel
-[0] Go Back
+
+ _______________________________________
+|                                       |
+| [1] nvidia-open - standard driver     |
+| [2] nvidia-open-lts - longterm driver |
+| [3] nvidia-open-dkms - dkms driver    |
+| [0] Go Back                           |
+|_______________________________________|
 ]])
 
         print("Choose an option (0-3): ")
@@ -1142,11 +1194,14 @@ _$$$$,     $$""""   $$$$$$c    $$$ "Y$c$$ $$""""    $$'      '''    $
 "888"88o,  888oo,__ 888b "88bo,888    Y88 888oo,__ o88oo,.__88b    dP
  MMM "MMP" """"YUMMMMMMM   "W" MMM     YM """"YUMMM""""YUMMM "YMmMY" 
 
-[1] linux
-[2] linux-lts
-[3] linux-zen
-[4] linux-hardened
-[0] Go Back
+ ____________________
+|                    |
+| [1] linux          |
+| [2] linux-lts      |
+| [3] linux-zen      |
+| [4] linux-hardened |
+| [0] Go Back        |
+|____________________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -1163,26 +1218,26 @@ _$$$$,     $$""""   $$$$$$c    $$$ "Y$c$$ $$""""    $$'      '''    $
                 print("Later you will also require to go into Tweaks -> Drivers and Install Drivers compatible with the Kernel and GPU")
                 os.execute("sleep 7")
                 return Arch_tweaks_kernelmanager()
-	end
-	if arch_tweaks_km_choice == 3 then
-		os.execute("sudo pacman -S linux-zen linux-zen-headers")
-		print("Later you will also require to go into Tweaks -> Drivers and Install Drivers compatible with the Kernel and GPU")
-		os.execute("sleep 7")
-		return Arch_tweaks_kernelmanager()
         end
-	if arch_tweaks_km_choice == 4 then
-		os.execute("sudo pacman -S linux-hardened linux-hardened-headers")
-		print("Later you will also require to go into Tweaks -> Drivers and Install Drivers compatible with the Kernel and GPU")
-		os.execute("sleep 7")
-		return Arch_tweaks_kernelmanager()
-	end
-	if arch_tweaks_km_choice == 0 then
-		return Arch_tweaks()
-	else
-		print("Invalid choice! Please try again.")
-		os.execute("sleep 2")
-		return Arch_tweaks_kernelmanager()
-	end
+        if arch_tweaks_km_choice == 3 then
+                os.execute("sudo pacman -S linux-zen linux-zen-headers")
+                print("Later you will also require to go into Tweaks -> Drivers and Install Drivers compatible with the Kernel and GPU")
+                os.execute("sleep 7")
+                return Arch_tweaks_kernelmanager()
+        end
+        if arch_tweaks_km_choice == 4 then
+                os.execute("sudo pacman -S linux-hardened linux-hardened-headers")
+                print("Later you will also require to go into Tweaks -> Drivers and Install Drivers compatible with the Kernel and GPU")
+                os.execute("sleep 7")
+                return Arch_tweaks_kernelmanager()
+        end
+        if arch_tweaks_km_choice == 0 then
+                return Arch_tweaks()
+        else
+                print("Invalid choice! Please try again.")
+                os.execute("sleep 2")
+                return Arch_tweaks_kernelmanager()
+        end
 end
 
 function Arch_license()

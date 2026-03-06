@@ -59,18 +59,18 @@ function Arch_gaming()
  `Y8bo,,,o88o888   888,888 Y88" 888o888  888    Y88 `Y8bo,,,o88o
    `'YMUP"YMMYMM   ""` MMM  M'  "MMMMMM  MMM     YM   `'YMUP"YMM
 
- __________________________________________________________________________
-|                                                                          |
-| [1] Games                                                                |
-| [2] Lutris - Managing Game Stores                                        |
-| [3] Steam - Game Marketplace and Launcher                                |
-| [4] Heroic Games Launcher - Managing Game Stores                         |
-| [5] WINE - Newest Stable Release                                         |
-| [6] WINE Testing - Experimental Release                                  |
-| [7] WineTricks - Newest Stable Release                                   |
-| [8] Proton-UpQt - Managing Proton, WINE-GE and other compatibility tools |
-| [0] Go Back                                                              |
-|__________________________________________________________________________|
+ ___________________________
+|                           |
+| [1] Games                 |
+| [2] Lutris                |
+| [3] Steam                 |
+| [4] Heroic Games Launcher |
+| [5] WINE Stable           |
+| [6] WINE Testing          |
+| [7] WineTricks            |
+| [8] Proton-UpQt           |
+| [0] Go Back               |
+|___________________________|
 ]])
 
         print("Choose an option (0-8): ")
@@ -127,14 +127,14 @@ function Arch_gaming_games()
  `Y8bo,,,o88o888   888,888 Y88" 888o888oo,__88b    dP
    `'YMUP"YMMYMM   ""` MMM  M'  "MMM""""YUMMM"YMmMY" 
 
- _____________________________
-|                             |
-| [1] Sober - Roblox on Linux |
-| [2] Prism Launcher          |
-| [3] Lunar Client            |
-| [4] Minecraft Launcher      |
-| [0] Go Back                 |
-|_____________________________|
+ ________________________
+|                        |
+| [1] Sober (Roblox)     |
+| [2] Prism Launcher     |
+| [3] Lunar Client       |
+| [4] Minecraft Launcher |
+| [0] Go Back            |
+|________________________|
 ]])
 
 	print("Choose an option (0-4): ")
@@ -225,14 +225,14 @@ $$$,     $$$`$$$"`` `$$$"`` $$$$$$         $$""""         '''    $$$      $$$$$$
 "888,_ _,88P 888     888    888`88bo,__,o, 888oo,__      88b    dP88    .d888888     88,     888oo,__88b    dP
   "YMMMMMP"  "MM,    "MM,   MMM  "YUMMMMMP"""""YUMMM      "YMmMY"  "YmmMMMM""MMM     MMM     """"YUMMM"YMmMY" 
 
- _________________________________
-|                                 |
-| [1] LibreOffice                 |
-| [2] LibreOffice Fresh (Testing) |
-| [3] OnlyOffice                  |
-| [4] WPS Office                  |
-| [0] Go Back                     |
-|_________________________________|
+ _______________________
+|                       |
+| [1] LibreOffice       |
+| [2] LibreOffice Fresh |
+| [3] OnlyOffice        |
+| [4] WPS Office        |
+| [0] Go Back           |
+|_______________________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -274,14 +274,14 @@ $$$$$$$$$$$"$$$c$$$cc$$$c"$$c.    "$$ $$""""        $$""""   $$,    $$$$$     $$
 888888 Y88" 888o888   888,`Y8bo,,,o88o888oo,__      888oo,__ 888_,o8P'888     88,   "888,_ _,88P888b "88bo,88b    dP
 MMMMMM  M'  "MMMYMM   ""`   `'YMUP"YMM""""YUMMM     """"YUMMMMMMMP"`  MMM     MMM     "YMMMMMP" MMMM   "W"  "YMmMY" 
 
- _______________________________________
-|                                       | 
-| [1] GIMP - Photo Editing              |
-| [2] Krita - Digital Painting          |
-| [3] Digikam - Photo Management        |
-| [4] Inkscape - Vector Graphics Editor |
-| [0] Go Back                           |
-|_______________________________________|
+ ______________
+|              | 
+| [1] GIMP     |
+| [2] Krita    |
+| [3] Digikam  |
+| [4] Inkscape |
+| [0] Go Back  |
+|______________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -323,14 +323,14 @@ function Arch_productivity_videoediting()
    Y88P      888  888_,o8P' 888oo,__"888,_ _,88P     888oo,__ 888_,o8P'888     88,   "888,_ _,88P888b "88bo,88b    dP
     MP       MMM  MMMMP"`   """"YUMMM "YMMMMMP"      """"YUMMMMMMMP"`  MMM     MMM     "YMMMMMP" MMMM   "W"  "YMmMY" 
 
- _________________________________________
-|                                         |
-| [1] Kdenlive - Video Editing by KDE     |
-| [2] Shotcut - Simple Video Editor       |
-| [3] OpenShot - Video Editing            |
-| [4] Flowblade - Fast Python multi-track |
-| [0] Go Back                             |
-|_________________________________________|
+ _______________
+|               |
+| [1] Kdenlive  |
+| [2] Shotcut   |
+| [3] OpenShot  |
+| [4] Flowblade |
+| [0] Go Back   |
+|_______________|
 ]])
 
         print("Choose an option (0-4): ")
@@ -372,12 +372,12 @@ function Arch_productivity_3dmodeling()
   ,,o888"888_,o8P'    888 Y88" 888o"888,_ _,88P 888_,o8P' 888oo,__ o88oo,.__888  888    Y88 `Y8bo,,,o88o
   YMMP"  MMMMP"`      MMM  M'  "MMM  "YMMMMMP"  MMMMP"`   """"YUMMM""""YUMMMMMM  MMM     YM   `'YMUP"YMM
 
- _______________________________________________
-|                                               |
-| [1] Blender - 3D Creation Suite               |
-| [2] Vinegar - Roblox Studio Launcher via WINE |
-| [0] Go Back                                   |
-|_______________________________________________|
+ _____________________________
+|                             |
+| [1] Blender                 |
+| [2] Vinegar (Roblox Studio) |
+| [0] Go Back                 |
+|_____________________________|
 ]])
 
         print("Choose an option (0-2): ")
@@ -469,19 +469,19 @@ function Arch_tools()
      88,   "888,_ _,88P"888,_ _,88Po88oo,.__88b    dP
      MMM     "YMMMMMP"   "YMMMMMP" """"YUMMM "YMmMY" 
 
- ___________________________________________
-|                                           |
-| [1] Media Players                         |
-| [2] Browsers                              |
-| [3] System Monitor                        |
-| [4] Pen Testing                           |
-| [5] Programming Language                  |
-| [6] Terminal Emulators                    |
-| [7] YAY - Yet Another Yaourt AUR Helper   |
-| [8] PARU - The AUR Helper Written in RUST |
-| [9] Flatpak - Software Made Easy          |
-| [0] Go Back                               |
-|___________________________________________|
+ ___________________________
+|                           |
+| [1] Media Players         |
+| [2] Browsers              |
+| [3] System Monitor        |
+| [4] Pen Testing           |
+| [5] Programming Languages |
+| [6] Terminal Emulators    |
+| [7] YAY - AUR Helper      |
+| [8] PARU - AUR Helper     |
+| [9] Flatpak               |
+| [0] Go Back               |
+|___________________________|
 ]])
 
         print("Choose an option (0-8): ")
@@ -541,15 +541,15 @@ $$$$$$$$"$$$ $$""""   $$,    $$$$$c$$$cc$$$c        $$$""    $$'    c$$$cc$$$c  
 888 Y88" 888o888oo,__ 888_,o8P'888 888   888,       888o    o88oo,.__888   888,,8P"`      888oo,__ 888b "88bo,
 MMM  M'  "MMM""""YUMMMMMMMP"`  MMM YMM   ""`        YMMMb   """"YUMMMYMM   ""`mM"         """"YUMMMMMMM   "W" 
 
- _________________________________
-|                                 |
-| [1] VLC - Media Player          |
-| [2] MPV - Media Player          |
-| [3] SMPlayer - Media Player     |
-| [4] Clementine - Music Player   |
-| [5] Gwenview - Image Viewer     |
-| [0] Go Back                     |
-|_________________________________|
+ __________________
+|                  |
+| [1] VLC          |
+| [2] MPV          |
+| [3] SMPlayer     |
+| [4] Clementine   |
+| [5] Gwenview     |
+| [0] Go Back      |
+|__________________|
 ]])
 
         print("Choose an option (0-5): ")
@@ -595,19 +595,19 @@ function Arch_tools_browsers()
 _88o,,od8P888b "88bo,"888,_ _,88P   "88"888    88b    dP888oo,__ 888b "88bo,88b    dP
 ""YUMMMP" MMMM   "W"   "YMMMMMP"     "M "M"     "YMmMY" """"YUMMMMMMM   "W"  "YMmMY" 
 
- _____________________________________________________________________________
-|                                                                             |
-| [1] Firefox - THE Privacy Focused Browser                                   |
-| [2] LibreWolf - A Fork of Firefox focused on enhancing privacy even further |
-| [3] Chromium - Open Source Browser made by Google                           |
-| [4] Mullvad Browser - A Privacy-Focused Browser built on Firefox            |
-| [5] Zen Browser - The Browser focused on Privacy and Usability              |
-| [6] Thorium - The Fastest Browser built on Chromium                         |
-| [7] Brave - A Chromium-built Privacy-Respecting Browser                     |
-| [8] Vivaldi - A Highly Customizable Chromium-based Browser                  |
-| [9] Tor Browser - The Privacy-Focused Browser that uses the Tor Network     |
-| [0] Go Back                                                                 |
-|_____________________________________________________________________________|
+ _____________________
+|                     |
+| [1] Firefox         |
+| [2] LibreWolf       |
+| [3] Chromium        |
+| [4] Mullvad Browser |
+| [5] Zen Browser     |
+| [6] Thorium         |
+| [7] Brave           |
+| [8] Vivaldi         |
+| [9] Tor Browser     |
+| [0] Go Back         |
+|_____________________|
 ]])
 
         print("Choose an Option (0-9): ")
@@ -669,18 +669,18 @@ function Arch_tools_sysmoni()
  88b    dP  ,8P"`      88b    dP    888 Y88" 888o"888,_ _,88P888    Y88888     88,   "888,_ _,88P888b "88bo,
   "YMmMY"  mM"          "YMmMY"     MMM  M'  "MMM  "YMMMMMP" MMM     YMMMM     MMM     "YMMMMMP" MMMM   "W" 
 
- _________________________________________
-|                                         |
-| [1] Htop                                |
-| [2] Btop                                |
-| [3] Bpytop                              |
-| [4] bashtop                             |
-| [5] glances                             |
-| [6] conky                               |
-| [7] fastfetch - Fetching system info    |
-| [8] GNOME System Monitor                |
-| [0] Go Back                             |
-|_________________________________________|
+ __________________________
+|                          |
+| [1] Htop                 |
+| [2] Btop                 |
+| [3] Bpytop               |
+| [4] bashtop              |
+| [5] glances              |
+| [6] conky                |
+| [7] fastfetch            |
+| [8] GNOME System Monitor |
+| [0] Go Back              |
+|__________________________|
 ]])
 
         print("Choose an option (0-8): ")
@@ -807,19 +807,19 @@ function Arch_tools_languages()
 o88oo,.__888   888,888    Y88 `Y8bo,,,o88o88    .d888 888   888,`Y8bo,,,o88o888oo,__88b    dP
 """"YUMMMYMM   ""` MMM     YM   `'YMUP"YMM "YmmMMMM"" YMM   ""`   `'YMUP"YMM""""YUMMM"YMmMY" 
 
- ________________________________________________
-|                                                |
-| [1] Z Shell - Modern and Powerful Shell        |
-| [2] PowerShell - Modern Shell by Microsoft     |
-| [3] Fish Shell - Fast, Customizable Shell      |
-| [4] Python - FOSS Programming Language         |
-| [5] python-pip - Python Package Manager        |
-| [6] Java (OpenJDK) - FOSS Programming Language |
-| [7] GO - FOSS Programming Language by Google   |
-| [8] RUST - Modern, Fast, Memory-safe PL        |
-| [9] Node.js - FOSS JavaScript runtime          |
-| [0] Go Back                                    |
-|________________________________________________|
+ ____________________
+|                    |
+| [1] Z Shell        |
+| [2] PowerShell     |
+| [3] Fish Shell     |
+| [4] Python         |
+| [5] python-pip     |
+| [6] Java (OpenJDK) |
+| [7] Golang         |
+| [8] RUST           |
+| [9] Node.js        |
+| [0] Go Back        |
+|____________________|
 ]])
 
         print("Choose an option (0-9): ")
@@ -1375,12 +1375,16 @@ O:::::::OOO:::::::O r:::::r           k::::::k k:::::k a::::a    a:::::a  n::::n
    OO:::::::::OO    r:::::r           k::::::k   k:::::ka::::::::::aa:::a n::::n    n::::n
      OOOOOOOOO      rrrrrrr           kkkkkkkk    kkkkkkkaaaaaaaaaa  aaaa nnnnnn    nnnnnn                                                                                
 
-Updating package list...
++==============================+
+| Licensed under the OPL 1.0.  |
+| Brought to you by Oxygen-OSS |
+| and it's community.          |
++==============================+
+
+Updating package list...   
 ]])
 
         os.execute("sudo pacman -Syu")
-        print("Packages Updated!")
-        os.execute("sleep 2")
         Arch_category()
 end
 

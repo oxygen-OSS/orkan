@@ -1357,14 +1357,14 @@ end
 function Main()
         os.execute("clear")
 
-        print([[                                                                                                                                                 
-     OOOOOOOOO                        kkkkkkkk                                            
-   OO:::::::::OO                      k::::::k                                            
- OO:::::::::::::OO                    k::::::k                                            
-O:::::::OOO:::::::O                   k::::::k                                            
-O::::::O   O::::::Orrrrr   rrrrrrrrr   k:::::k    kkkkkkkaaaaaaaaaaaaa  nnnn  nnnnnnnn    
-O:::::O     O:::::Or::::rrr:::::::::r  k:::::k   k:::::k a::::::::::::a n:::nn::::::::nn  
-O:::::O     O:::::Or:::::::::::::::::r k:::::k  k:::::k  aaaaaaaaa:::::an::::::::::::::nn 
+        print([[
+     OOOOOOOOO                        kkkkkkkk
+   OO:::::::::OO                      k::::::k
+ OO:::::::::::::OO                    k::::::k
+O:::::::OOO:::::::O                   k::::::k
+O::::::O   O::::::Orrrrr   rrrrrrrrr   k:::::k    kkkkkkkaaaaaaaaaaaaa  nnnn  nnnnnnnn
+O:::::O     O:::::Or::::rrr:::::::::r  k:::::k   k:::::k a::::::::::::a n:::nn::::::::nn
+O:::::O     O:::::Or:::::::::::::::::r k:::::k  k:::::k  aaaaaaaaa:::::an::::::::::::::nn
 O:::::O     O:::::Orr::::::rrrrr::::::rk:::::k k:::::k            a::::ann:::::::::::::::n
 O:::::O     O:::::O r:::::r     r:::::rk::::::k:::::k      aaaaaaa:::::a  n:::::nnnn:::::n
 O:::::O     O:::::O r:::::r     rrrrrrrk:::::::::::k     aa::::::::::::a  n::::n    n::::n

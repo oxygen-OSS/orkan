@@ -131,13 +131,11 @@ function Arch_gaming_games()
 |                        |
 | [1] Sober (Roblox)     |
 | [2] Prism Launcher     |
-| [3] Lunar Client       |
-| [4] Minecraft Launcher |
 | [0] Go Back            |
 |________________________|
 ]])
 
-	print("Choose an option (0-4): ")
+	print("Choose an option (0-2): ")
         local arch_gaming_games_choice = tonumber(io.read())
 
         if arch_gaming_games_choice == 1 then
@@ -148,14 +146,6 @@ function Arch_gaming_games()
 		os.execute("sudo pacman -S prismlauncher")
 		return Arch_gaming_games()
 	end
-        if arch_gaming_games_choice == 3 then
-                os.execute("yay -S lunar-client")
-                return Arch_gaming_games()
-        end
-        if arch_gaming_games_choice == 4 then
-                os.execute("yay -S minecraft-launcher")
-                return Arch_gaming_games()
-        end
         if arch_gaming_games_choice == 0 then
                 return Arch_gaming()
         else
@@ -230,7 +220,6 @@ $$$,     $$$`$$$"`` `$$$"`` $$$$$$         $$""""         '''    $$$      $$$$$$
 | [1] LibreOffice       |
 | [2] LibreOffice Fresh |
 | [3] OnlyOffice        |
-| [4] WPS Office        |
 | [0] Go Back           |
 |_______________________|
 ]])
@@ -248,10 +237,6 @@ $$$,     $$$`$$$"`` `$$$"`` $$$$$$         $$""""         '''    $$$      $$$$$$
         end
         if arch_productivity_officesuites_choice == 3 then
                 os.execute("yay -S onlyoffice-bin")
-                return Arch_productivity_officesuites()
-        end
-        if arch_productivity_officesuites_choice == 4 then
-                os.execute("yay -S wps-office")
                 return Arch_productivity_officesuites()
         end
         if arch_productivity_officesuites_choice == 0 then
@@ -602,15 +587,14 @@ _88o,,od8P888b "88bo,"888,_ _,88P   "88"888    88b    dP888oo,__ 888b "88bo,88b 
 | [3] Chromium        |
 | [4] Mullvad Browser |
 | [5] Zen Browser     |
-| [6] Thorium         |
-| [7] Brave           |
-| [8] Vivaldi         |
-| [9] Tor Browser     |
+| [6] Brave           |
+| [7] Vivaldi         |
+| [8] Tor Browser     |
 | [0] Go Back         |
 |_____________________|
 ]])
 
-        print("Choose an Option (0-9): ")
+        print("Choose an Option (0-8): ")
         local Arch_tools_browsers_choice = tonumber(io.read())
 
         if Arch_tools_browsers_choice == 1 then
@@ -634,18 +618,14 @@ _88o,,od8P888b "88bo,"888,_ _,88P   "88"888    88b    dP888oo,__ 888b "88bo,88b 
                 return Arch_tools_browsers()
         end
         if Arch_tools_browsers_choice == 6 then
-                os.execute("yay -S thorium-browser-bin")
-                return Arch_tools_browsers()
-        end
-        if Arch_tools_browsers_choice == 7 then
                 os.execute("yay -S brave-bin")
                 return Arch_tools_browsers()
         end
-        if Arch_tools_browsers_choice == 8 then
+        if Arch_tools_browsers_choice == 7 then
                 os.execute("sudo pacman -S vivaldi")
                 return Arch_tools_browsers()
         end
-        if Arch_tools_browsers_choice == 9 then
+        if Arch_tools_browsers_choice == 8 then
                 os.execute("sudo pacman -S torbrowser-launcher")
                 return Arch_tools_browsers()
         end
@@ -671,50 +651,35 @@ function Arch_tools_sysmoni()
 
  __________________________
 |                          |
-| [1] Htop                 |
-| [2] Btop                 |
-| [3] Bpytop               |
-| [4] bashtop              |
-| [5] glances              |
-| [6] conky                |
-| [7] fastfetch            |
-| [8] GNOME System Monitor |
+| [1] Btop                 |
+| [2] glances              |
+| [3] conky                |
+| [4] fastfetch            |
+| [5] GNOME System Monitor |
 | [0] Go Back              |
 |__________________________|
 ]])
 
-        print("Choose an option (0-8): ")
+        print("Choose an option (0-5): ")
         local arch_tools_sysmoni_choice = tonumber(io.read())
 
         if arch_tools_sysmoni_choice == 1 then
-                os.execute("sudo pacman -S htop")
-                return Arch_tools_sysmoni()
-        end
-        if arch_tools_sysmoni_choice == 2 then
                 os.execute("sudo pacman -S btop")
                 return Arch_tools_sysmoni()
         end
-        if arch_tools_sysmoni_choice == 3 then
-                os.execute("sudo pacman -S bpytop")
-                return Arch_tools_sysmoni()
-        end
-        if arch_tools_sysmoni_choice == 4 then
-                os.execute("sudo pacman -S bashtop")
-                return Arch_tools_sysmoni()
-        end
-        if arch_tools_sysmoni_choice == 5 then
+        if arch_tools_sysmoni_choice == 2 then
                 os.execute("sudo pacman -S glances")
                 return Arch_tools_sysmoni()
         end
-        if arch_tools_sysmoni_choice == 6 then
+        if arch_tools_sysmoni_choice == 3 then
                 os.execute("sudo pacman -S conky")
                 return Arch_tools_sysmoni()
         end
-        if arch_tools_sysmoni_choice == 7 then
+        if arch_tools_sysmoni_choice == 4 then
                 os.execute("sudo pacman -S fastfetch")
                 return Arch_tools_sysmoni()
         end
-        if arch_tools_sysmoni_choice == 8 then
+        if arch_tools_sysmoni_choice == 5 then
                 os.execute("sudo pacman -S gnome-system-monitor")
                 return Arch_tools_sysmoni()
         end
@@ -747,12 +712,13 @@ function Arch_tools_pentesting()
 | [5] John the Ripper                             |
 | [6] netcat                                      |
 | [7] Hashcat                                     |
-| [8] Add BlackArch repository (Not Recommended!) |
+| [8] sqlmap                                      |
+| [9] Add BlackArch repository (Not Recommended!) |
 | [0] Go Back                                     |
 |_________________________________________________|
 ]])
 
-        print("Choose an option (0-8): ")
+        print("Choose an option (0-9): ")
         local arch_tools_pentesting_choice = tonumber(io.read())
 
         if arch_tools_pentesting_choice == 1 then
@@ -783,7 +749,11 @@ function Arch_tools_pentesting()
                 os.execute("sudo pacman -S hashcat")
                 return Arch_tools_pentesting()
         end
-        if arch_tools_pentesting_choice == 8 then
+		if arch_tools_pentesting_choice == 8 then
+				os.execute("yay -S sqlmap-git")
+				return Arch_tools_pentesting()
+	end
+        if arch_tools_pentesting_choice == 9 then
                 os.execute("sudo pacman -S curl && curl -O https://blackarch.org/strap.sh && sudo ./strap.sh && sudo pacman -Syyu")
                 return Arch_tools_pentesting()
         end
@@ -887,11 +857,12 @@ function Arch_tools_terminal()
 | [2] Alacritty      |
 | [3] Konsole        |
 | [4] Xfce4-Terminal |
+| [5] st             |
 | [0] Go Back        |
 |____________________|
 ]])
 
-        print("Choose an option (0-4): ")
+        print("Choose an option (0-5): ")
         local arch_terminals_choice = tonumber(io.read())
 
         if arch_terminals_choice == 1 then
@@ -910,6 +881,10 @@ function Arch_tools_terminal()
                 os.execute("sudo pacman -S xfce4-terminal")
                 return Arch_tools_terminal()
         end
+		if arch_terminals_choice == 5 then
+				os.execute("yay -S st")
+				return Arch_tools_terminal()
+		end
         if arch_terminals_choice == 0 then
                 return Arch_tools()
         else
